@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Some Website</title>
-    </head>
-    <body>
-    {{> header}}
+<head>
+    <meta charset="UTF-8">
+    <title>Adriel Fabella</title>
 
-    <p>{{screamIt welcomeMessage}}</p>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-    {{> footer}}
-    </body>
+    <!-- CDN libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- CSS -->
+    <link href="/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="intro">
+        <h1>Adriel Fabella</h1>
+        <h2>Software Engineering Student</h2>
+    </div>
+</header>
+
+
+<section class="about">
+    <div class="about-content container wow fadeInUp">
+        <h3>Hi, I'm <span>Adriel.</span></h3>
+        <p>{{indexData}}</p>
+    </div>
+</section>
+
+
+<div class="container">
+    <section class="portfolio">
+        <h3 style="text-align: center" class="wow fadeIn">Work</h3>
+        <div class="row" style="margin: 5% auto;">
+            <div id="work1" class="col-lg-3 col-lg-offset-1 thumbnail text-center wow fadeInLeft">
+                <a href="#">
+                    <img src="img/computer.jpg" id="image1" class="image-responsive">
+                    <div class="caption" id="caption1">
+                        <p>Lorem ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 thumbnail text-center wow fadeInDown">
+                <a href="#">
+                    <img src="img/computer.jpg" id="image2" class="image-responsive">
+                    <div class="caption" id="caption2">
+                        <p>Lorem ipsum</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 thumbnail text-center wow fadeInRight">
+                <a href="#">
+                    <img src="img/computer.jpg" id="image3" class="image-responsive">
+                    <div class="caption" id="caption3">
+                        <p>Lorem ipsum</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div><!--End of "wrapper"-->
+
+<section class="contact">
+    <div class="contact-content">
+        <h4>Have a project in mind? Email me:<a class="email" href="mailto:adriel.fab@gmail.com">a_fabell@live.concordia.ca</a></h4>
+    </div>
+</section>
+
+<div class="image-divider">
+
+</div>
+
+{{> footer}}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/663f1e011b.js"></script>
+<script type="text/javascript" src="/javascript/wow.min.js"></script> <!--Licensing in other folder-->
+<script type="text/javascript" src="/javascript/script.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+
 </html>
