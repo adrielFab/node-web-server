@@ -148,6 +148,9 @@ header {
     visibility: hidden;
 }
 
+img{
+  border: 1px solid rgba(104,174,200, 1.0);
+}
 
 /**Contact**/
 
@@ -293,4 +296,5 @@ header {
     left: 0;
     width: 100%;
     visibility: visible;
+    font-weight: 800;
 }
