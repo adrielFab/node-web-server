@@ -1,0 +1,74 @@
+<!-- This project corresponds to the Web Development at Success -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adriel Fabella</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <!-- CDN libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!-- CSS -->
+    <link href="/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="projects">
+
+
+<div class="jumbotron" id="project2">
+    <div class="container">
+        <p id="tags"><span class="bullet">&#9679</span> HTML CSS JavaScript Node Express</p><br/>
+        <h2>Node.js</h2><br/>
+        <h4><em>SnowGo Application</em></h4>
+    </div>
+</div>
+
+
+<div class="container" style="padding-bottom: 30px;">
+    <h3 style="color: rgba(100, 184, 137, 1)">SnowGo application</h3>
+    <img src="/img/snowgo.png" id="cmd">
+
+        <p>I love playing in the snow. Skating, sledding, building a snowman...it is what makes Montreal so special. However, the
+            only way for me to truly have fun, is the weather needs to be perfect. Hence, to get to know to know Node, the application
+        <strong>SnowGo</strong> was created to tell me on which days I can go out for some fun in the snow during the week</p>
+        <br/>
+
+        <p>The application includes the <strong>http</strong> core module. In addition, it uses two apis: forecast.io and google maps.
+            The google maps is used to request the geolocation of the address and forecast.io allows for the application to request
+            the weather, temperature and other information of the address.
+        <br/><br/>
+</div>
+
+<div class="container" style="padding-bottom: 30px;">
+    <h3 style="color: rgba(100, 184, 137, 1)">Personal Website</h3>
+
+    <p>My very own personal website was created using the Express.js framework. The purpose of doing this project is not only to
+        establish my presence on the web, but it allows me to understand the express.js framework and experiment with it. I was able
+        to capture a good understanding of the basic skeleton of express, implementing an MVC architecture and using handlebars to render
+        HTML files. And I must say ... Using this framework is a lot of fun! </p>
+</div>
+
+<div class="container" style="padding-bottom: 20px;">
+    <a href="/"><i class="fa fa-arrow-circle-o-left fa-3x" aria-hidden="true" style="color: #000;"></i></a>
+</div>
+
+
+{{> footer}}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/663f1e011b.js"></script>
+<script type="text/javascript" src="/javascript/wow.min.js"></script> <!--Licensing in other folder-->
+<script type="text/javascript" src="/javascript/script.js"></script>
+<script>
+    new WOW().init();
+</script>
+</body>
+
+</html>

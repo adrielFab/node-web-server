@@ -38,11 +38,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/project1', (req, res) => {
-    res.render('project1.hbs', {
-
-    })
+    res.render('project1.hbs')
 });
 
+app.get('/project2', (req, res) => {
+    res.render('project2.hbs')
+});
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
