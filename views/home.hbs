@@ -57,6 +57,14 @@
                     </div>
                 </a>
             </div>
+            <div class="col-lg-3 thumbnail text-center wow fadeInRight">
+                <a href="/project3">
+                    <img src="img/android.png" id="image3" class="image-responsive" width="300" height="200">
+                    <div class="caption" id="caption3">
+                        <p>Android Studio</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 </div><!--End of "wrapper"-->
@@ -97,10 +105,13 @@
 <script type="text/javascript" src="/javascript/script.js"></script>
 
 <script>
+    var wow = new WOW();
+    wow.init();
     $(function(){
         $(".element").typed({
             strings: ["Code the World.", "Evolve the World."],
-            typeSpeed: 0
+            typeSpeed: 0,
+            backSpeed: 30
         });
     });
 </script>
